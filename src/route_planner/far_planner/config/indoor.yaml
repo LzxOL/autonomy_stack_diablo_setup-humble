@@ -14,7 +14,7 @@ far_planner:
     is_opencv_visual: false # Obstacle Image Display
     is_static_env: false # 原始值为false  |   true->静态地图 false->动态地图
     is_pub_boundary: false  
-    is_debug_output: true # 原始值为false
+    is_debug_output: false # 原始值为false
     is_attempt_autoswitch: true  # Auto switch to attemptable navigation
     world_frame: my_map
 

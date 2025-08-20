@@ -9,15 +9,15 @@
     <param name="clearingDis" value="30.0" />
     <param name="useSorting" value="true" />
     <param name="quantileZ" value="0.1" />
-    <param name="vehicleHeight" value="0.45" />
+    <param name="vehicleHeight" value="0.47" />
     <param name="voxelPointUpdateThre" value="100" />
     <param name="voxelTimeUpdateThre" value="2.0" />
-    <param name="lowerBoundZ" value="-0.45" />
+    <param name="lowerBoundZ" value="-0.47" />
     <param name="upperBoundZ" value="0.2" />
     <param name="disRatioZ" value="0.1" />
     <param name="checkTerrainConn" value="$(var checkTerrainConn)" />
     <param name="terrainConnThre" value="0.5" />
-    <param name="terrainUnderVehicle" value="-0.45" />
+    <param name="terrainUnderVehicle" value="-0.47" />
     <param name="ceilingFilteringThre" value="2.0" />
     <param name="localTerrainMapRadius" value="3.0" />
   </node>

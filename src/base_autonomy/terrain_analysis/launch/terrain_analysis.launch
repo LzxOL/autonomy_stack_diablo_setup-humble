@@ -21,10 +21,10 @@
     <param name="noDataObstacle" value="false" />
     <param name="noDataBlockSkipNum" value="0" />
     <param name="minBlockPointNum" value="10" />
-    <param name="vehicleHeight" value="0.45" /> <!-- 车辆底盘高度 -->
+    <param name="vehicleHeight" value="0.47" /> <!-- 车辆底盘高度 -->
     <param name="voxelPointUpdateThre" value="100" />
     <param name="voxelTimeUpdateThre" value="2.0" />
-    <param name="minRelZ" value="-0.45" /> <!--点相对于base_link的最小z值（即车底位置，base_link自身高度）。-->
+    <param name="minRelZ" value="-0.47" /> <!--点相对于base_link的最小z值（即车底位置，base_link自身高度）。-->
     <param name="maxRelZ" value="0.2" /> <!--点相对于base_link的最大z值（即车顶位置，base_link自身高度）。!-->
     <param name="disRatioZ" value="0.15" />
   </node>

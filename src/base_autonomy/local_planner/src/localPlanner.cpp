@@ -745,9 +745,9 @@ int main(int argc, char** argv)
         *plannerCloud = *terrainCloudDwz;
       }
 
-      // 添加调试输出
-      RCLCPP_INFO(nh->get_logger(), "开始规划路径: autonomyMode=%s, checkObstacle=%s", 
-                  autonomyMode ? "true" : "false", checkObstacle ? "true" : "false");
+      // 规划阶段概览
+      RCLCPP_DEBUG(nh->get_logger(), "开始规划: autonomyMode=%s, checkObstacle=%s, cloudSize=%zu",
+                   autonomyMode ? "true" : "false", checkObstacle ? "true" : "false", plannerCloud->points.size());
       
       // 在 base_link 坐标系下，点已经在车体坐标系，无需再做 vehicleX/Y/Yaw 的平移与旋转
       pcl::PointXYZI point;
@@ -842,9 +842,6 @@ int main(int argc, char** argv)
       if (pathScale < minPathScale) pathScale = minPathScale;
 
       while (pathScale >= minPathScale && pathRange >= minPathRange) {
-        // 添加调试输出
-        RCLCPP_INFO(nh->get_logger(), "尝试路径规划: pathScale=%.2f, pathRange=%.2f, minPathScale=%.2f, minPathRange=%.2f",
-                  pathScale, pathRange, minPathScale, minPathRange);
         
         for (int i = 0; i < 36 * pathNum; i++) {
           clearPathList[i] = 0;
@@ -862,12 +859,10 @@ int main(int argc, char** argv)
         float angOffset = atan2(vehicleWidth, vehicleLength) * 180.0 / PI;
         // 在清除路径列表和添加障碍物点检查后添加调试
         int plannerCloudCropSize = plannerCloudCrop->points.size();
-        
-        // 添加调试输出
-        RCLCPP_INFO(nh->get_logger(), "当前路径规划点云大小: %d, 范围参数: pathRange=%.2f, relativeGoalDis=%.2f", 
-                  plannerCloudCropSize, pathRange, relativeGoalDis);
 
-        // 在路径阻断判断处添加调试
+        // 在路径阻断判断处添加统计：记录被过滤的原因
+        int blocked_by_height = 0;
+        int considered_points = 0;
         for (int i = 0; i < plannerCloudCropSize; i++) {
           float x = plannerCloudCrop->points[i].x / pathScale;
           float y = plannerCloudCrop->points[i].y / pathScale;
@@ -875,11 +870,8 @@ int main(int argc, char** argv)
           float dis = sqrt(x * x + y * y);
 
           if (dis < pathRange / pathScale && (dis <= (relativeGoalDis + goalClearRange) / pathScale || !pathCropByGoal) && checkObstacle) {
-            // 每100个点输出一次，避免信息过多
-            if (i % 100 == 0) {
-              RCLCPP_INFO(nh->get_logger(), "障碍物点: x=%.2f, y=%.2f, h=%.2f, dis=%.2f, 高度阈值: %.2f", 
-                        x, y, h, dis, obstacleHeightThre);
-            }
+            considered_points++;
+            if (h > obstacleHeightThre) blocked_by_height++;
             
             for (int rotDir = 0; rotDir < 36; rotDir++) {
               float rotAng = (10.0 * rotDir - 180.0) * PI / 180;
@@ -975,7 +967,8 @@ int main(int argc, char** argv)
             totalClearPaths += clearPathPerGroupNum[i];
           }
         }
-        RCLCPP_INFO(nh->get_logger(), "可行路径统计: 总数=%d", totalClearPaths);
+        RCLCPP_DEBUG(nh->get_logger(), "可行路径统计: clearPaths=%d, consideredPts=%d, blockedByH=%d (thr=%.2f)",
+                     totalClearPaths, considered_points, blocked_by_height, obstacleHeightThre);
         
         for (int i = 0; i < 36 * groupNum; i++) {
           int rotDir = int(i / groupNum);
@@ -989,8 +982,8 @@ int main(int argc, char** argv)
           }
         }
 
-        // 添加调试输出
-        RCLCPP_INFO(nh->get_logger(), "路径评分: maxScore=%.2f, selectedGroupID=%d", maxScore, selectedGroupID);
+        // 评分概览
+        RCLCPP_DEBUG(nh->get_logger(), "评分: maxScore=%.2f, selectedGroupID=%d", maxScore, selectedGroupID);
 
         float penaltyScore = 0;
         if (selectedGroupID >= 0) {
@@ -1082,26 +1075,18 @@ int main(int argc, char** argv)
           if (pathScale >= minPathScale + pathScaleStep) {
             pathScale -= pathScaleStep;
             pathRange = adjacentRange * pathScale / defPathScale;
-            // 添加调试输出
-            RCLCPP_INFO(nh->get_logger(), "未找到路径，缩小比例: 新pathScale=%.2f", pathScale);
           } else {
             pathRange -= pathRangeStep;
-            // 添加调试输出
-            RCLCPP_INFO(nh->get_logger(), "未找到路径，缩小范围: 新pathRange=%.2f", pathRange);
           }
         } else {
           pathFound = true;
-          // 添加调试输出
-          RCLCPP_INFO(nh->get_logger(), "找到有效路径，选择组ID=%d", selectedGroupID);
           break;
         }
       }
       pathScale = defPathScale;
 
       if (!pathFound) {
-        // 添加调试输出
-        RCLCPP_INFO(nh->get_logger(), "未找到有效路径，发布空路径");
-        RCLCPP_INFO(nh->get_logger(), "------------------------");
+
         path.poses.resize(1);
         path.poses[0].pose.position.x = 0;
         path.poses[0].pose.position.y = 0;
@@ -1120,8 +1105,6 @@ int main(int argc, char** argv)
         pubFreePaths->publish(freePaths2);
         #endif
       } else {
-        // 添加调试输出
-        RCLCPP_INFO(nh->get_logger(), "发布路径，长度=%d", (int)path.poses.size());
       }
 
       /*sensor_msgs::msg::PointCloud2 plannerCloud2;

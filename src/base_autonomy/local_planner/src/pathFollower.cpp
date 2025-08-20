@@ -431,9 +431,9 @@ int main(int argc, char** argv)
       if (dirDiff > PI) dirDiff -= 2 * PI;
       else if (dirDiff < -PI) dirDiff += 2 * PI;
 
-      // 添加调试输出：方向差和距离
-      RCLCPP_INFO(nh->get_logger(), "路径点信息: ID=%d, 距离=%.3f, 方向差=%.3f弧度(%.1f度), 阈值=%.3f弧度", 
-                 pathPointID, dis, dirDiff, dirDiff*180.0/PI, dirDiffThre);
+      // // 添加调试输出：方向差和距离
+      // RCLCPP_INFO(nh->get_logger(), "路径点信息: ID=%d, 距离=%.3f, 方向差=%.3f弧度(%.1f度), 阈值=%.3f弧度", 
+      //            pathPointID, dis, dirDiff, dirDiff*180.0/PI, dirDiffThre);
 
       if (twoWayDrive) {
         double time = nh->now().seconds();
@@ -447,8 +447,8 @@ int main(int argc, char** argv)
       }
       joySpeed = 1;
       float joySpeed2 = maxSpeed * joySpeed; 
-      RCLCPP_INFO(nh->get_logger(), "joySpeed2 = %0.3f, maxSpeed = %.3f, joySpeed = %.3f", 
-                 joySpeed2, maxSpeed, joySpeed);
+      // RCLCPP_INFO(nh->get_logger(), "joySpeed2 = %0.3f, maxSpeed = %.3f, joySpeed = %.3f", 
+      //            joySpeed2, maxSpeed, joySpeed);
       if (!navFwd) {
         dirDiff += PI;
         if (dirDiff > PI) dirDiff -= 2 * PI;
@@ -458,8 +458,14 @@ int main(int argc, char** argv)
       if (fabs(vehicleSpeed) < 2.0 * maxAccel / 100.0) vehicleYawRate = -stopYawRateGain * dirDiff;
       else vehicleYawRate = -yawRateGain * dirDiff;
 
+      // 若角速度被限幅，打印一次提示
+      float rawYawRate = vehicleYawRate;
       if (vehicleYawRate > maxYawRate * PI / 180.0) vehicleYawRate = maxYawRate * PI / 180.0;
       else if (vehicleYawRate < -maxYawRate * PI / 180.0) vehicleYawRate = -maxYawRate * PI / 180.0;
+      if (fabs(rawYawRate - vehicleYawRate) > 1e-6) {
+        RCLCPP_DEBUG(nh->get_logger(), "角速度被限幅: raw=%.3f, clamped=%.3f(rad/s), maxYawRate=%.1f(deg/s)",
+                     rawYawRate, vehicleYawRate, maxYawRate);
+      }
 
       if (joySpeed2 == 0 && !autonomyMode) {
         vehicleYawRate = maxYawRate * joyYaw * PI / 180.0;
@@ -469,20 +475,20 @@ int main(int argc, char** argv)
 
       // 添加调试输出：路径点数判断
       if (pathSize <= 1) {
-        RCLCPP_INFO(nh->get_logger(), "速度设为0: 路径点数 (%d) <= 1", pathSize);
+        // RCLCPP_INFO(nh->get_logger(), "速度设为0: 路径点数 (%d) <= 1", pathSize);
         joySpeed2 = 0;
       } else if (endDis / slowDwnDisThre < joySpeed) { 
         joySpeed2 *= endDis / slowDwnDisThre;
-        RCLCPP_INFO(nh->get_logger(), "减速: 终点距离(%.3f) / 减速阈值(%.3f) < joySpeed(%.3f), 结果joySpeed2=%.3f", 
-                   endDis, slowDwnDisThre, joySpeed, joySpeed2);
+        // RCLCPP_INFO(nh->get_logger(), "减速: 终点距离(%.3f) / 减速阈值(%.3f) < joySpeed(%.3f), 结果joySpeed2=%.3f", 
+        //            endDis, slowDwnDisThre, joySpeed, joySpeed2);
       }
 
       float joySpeed3 = joySpeed2;
       if (odomTime < slowInitTime + slowTime1 && slowInitTime > 0 || slowDown == 1) joySpeed3 *= slowRate1;
       else if (odomTime < slowInitTime + slowTime1 + slowTime2 && slowInitTime > 0 || slowDown == 2) joySpeed3 *= slowRate2;
 
-      RCLCPP_INFO(nh->get_logger(), "joySpeed3 = %0.3f, joySpeed2 = %.3f", 
-                 joySpeed3, joySpeed2);
+      // RCLCPP_INFO(nh->get_logger(), "joySpeed3 = %0.3f, joySpeed2 = %.3f", 
+      //            joySpeed3, joySpeed2);
       // 添加调试输出：方向差和停止距离判断
       RCLCPP_INFO(nh->get_logger(), "速度计算条件: |dirDiff|=%.3f < 阈值(%.3f)=%s, dis=%.3f > 停止阈值(%.3f)=%s", 
                  fabs(dirDiff), dirDiffThre, fabs(dirDiff) < dirDiffThre ? "true" : "false",
@@ -491,46 +497,63 @@ int main(int argc, char** argv)
       if (fabs(dirDiff) < dirDiffThre && dis > stopDisThre) {
         if (vehicleSpeed < joySpeed3) {
           vehicleSpeed += maxAccel / 100.0;  // 增加速度增量为原来的2倍，确保可以突破阈值
-          RCLCPP_INFO(nh->get_logger(), "加速: vehicleSpeed(%.3f) < joySpeed3(%.3f), 增加%.5f", 
-                     vehicleSpeed - maxAccel/50.0, joySpeed3, maxAccel/50.0);
         }
         else if (vehicleSpeed > joySpeed3) {
           vehicleSpeed -= maxAccel / 100.0;
-          RCLCPP_INFO(nh->get_logger(), "减速: vehicleSpeed(%.3f) > joySpeed3(%.3f), 减少%.5f", 
-                     vehicleSpeed + maxAccel/100.0, joySpeed3, maxAccel/100.0);
         }
       } else {
         if (vehicleSpeed > 0) {
           vehicleSpeed -= maxAccel / 100.0;
-          RCLCPP_INFO(nh->get_logger(), "停止: 方向差过大或距离过小, vehicleSpeed(%.3f) > 0, 减少%.5f", 
-                     vehicleSpeed + maxAccel/100.0, maxAccel/100.0);
         }
         else if (vehicleSpeed < 0) {
           vehicleSpeed += maxAccel / 100.0;  // 增加速度增量，确保可以快速归零
-          RCLCPP_INFO(nh->get_logger(), "停止: 方向差过大或距离过小, vehicleSpeed(%.3f) < 0, 增加%.5f", 
-                     vehicleSpeed - maxAccel/50.0, maxAccel/50.0);
         }
       }
 
       if (odomTime < stopInitTime + stopTime && stopInitTime > 0) {
         vehicleSpeed = 0;
         vehicleYawRate = 0;
-        RCLCPP_INFO(nh->get_logger(), "安全停止: 因倾斜度过大");
       }
 
       if (safetyStop >= 1) {
         vehicleSpeed = 0;
-        RCLCPP_INFO(nh->get_logger(), "安全停止: safetyStop=%d", safetyStop);
       }
       if (safetyStop >= 2) vehicleYawRate = 0;
+
+      // 诊断：原地打转或原地不动的原因输出
+      bool cond_dir_ok = fabs(dirDiff) < dirDiffThre;
+      bool cond_dis_ok = dis > stopDisThre;
+      bool cond_path_ok = pathSize > 1;
+      bool cond_freeze = (odomTime < stopInitTime + stopTime && stopInitTime > 0);
+      bool cond_safety_stop = (safetyStop >= 1);
+      bool in_place_turn = (fabs(vehicleSpeed) < 1e-4 && fabs(vehicleYawRate) > 1e-3);
+      bool fully_stop = (fabs(vehicleSpeed) < 1e-4 && fabs(vehicleYawRate) < 1e-3);
+      if (in_place_turn) {
+        RCLCPP_WARN(nh->get_logger(),
+          "原地转圈诊断: dirOK=%s (|dirDiff|=%.3f<thre=%.3f), disOK=%s (dis=%.3f>stopThre=%.3f), pathOK=%s (pathSize=%d), freeze=%s, safetyStop=%s",
+          cond_dir_ok ? "true" : "false",
+          fabs(dirDiff), dirDiffThre,
+          cond_dis_ok ? "true" : "false",
+          dis, stopDisThre,
+          cond_path_ok ? "true" : "false", pathSize,
+          cond_freeze ? "true" : "false",
+          cond_safety_stop ? "true" : "false");
+      } else if (fully_stop) {
+        RCLCPP_WARN(nh->get_logger(),
+          "原地不动诊断: 可能原因=[%s%s%s%s%s]",
+          (!cond_path_ok ? "路径点过少; " : ""),
+          (!cond_dis_ok ? "距离目标过近(停止阈值); " : ""),
+          (!cond_dir_ok ? "方向偏差过大; " : ""),
+          (cond_freeze ? "安全停止(倾斜/设定); " : ""),
+          (cond_safety_stop ? "外部安全停止; " : ""));
+      }
 
       pubSkipCount--;
       if (pubSkipCount < 0) {
         cmd_vel.header.stamp = rclcpp::Time(static_cast<uint64_t>(odomTime * 1e9));
         if (fabs(vehicleSpeed) <= maxAccel / 200.0) {  // 将阈值减半，确保速度可以超过零点判断阈值
           cmd_vel.twist.linear.x = 0;
-          RCLCPP_INFO(nh->get_logger(), "输出速度为0: |vehicleSpeed|(%.5f) <= maxAccel/200(%.5f)", 
-                     fabs(vehicleSpeed), maxAccel/200.0);
+
         }
         else cmd_vel.twist.linear.x = vehicleSpeed;
         cmd_vel.twist.angular.z = vehicleYawRate;
