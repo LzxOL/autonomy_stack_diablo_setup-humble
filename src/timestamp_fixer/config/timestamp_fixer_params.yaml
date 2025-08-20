@@ -1,0 +1,20 @@
+timestamp_fixer:
+  ros__parameters:
+    # 默认配置：左右相机图像和点云
+    input_topics: ["/right/image_raw", "/left/image_raw", "/registered_scan_raw"]
+    output_topics: ["/right/image_raw/fixed", "/left/image_raw/fixed", "/registered_scan"]
+    msg_types: ["sensor_msgs/msg/Image", "sensor_msgs/msg/Image", "sensor_msgs/msg/PointCloud2"]
+
+# 其他可选配置示例
+# timestamp_fixer_stereo:
+#   ros__parameters:
+#     # 立体相机配置
+#     input_topics: 
+#       - "/stereo/left/image_raw"
+#       - "/stereo/right/image_raw"
+#     output_topics:
+#       - "/stereo/left/image_raw_fixed"
+#       - "/stereo/right/image_raw_fixed"
+#     msg_types:
+#       - "sensor_msgs/msg/Image"
+#       - "sensor_msgs/msg/Image"

@@ -1,0 +1,31 @@
+digraph G {
+"camera_depth_frame" -> "camera_color_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"camera_link" -> "camera_depth_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"camera_color_frame" -> "camera_color_optical_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"camera_depth_frame" -> "camera_depth_optical_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"camera_depth_frame" -> "camera_accel_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"camera_accel_frame" -> "camera_accel_optical_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"camera_depth_frame" -> "camera_gyro_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"camera_gyro_frame" -> "camera_gyro_optical_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"sensor" -> "camera"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"tita4264886/base_link" -> "chassis_odom"[label=" Broadcaster: default_authority\nAverage rate: 59.916\nBuffer length: 3.972\nMost recent transform: 1751791452.342679\nOldest transform: 1751791448.370422\n"];
+"sensor" -> "vehicle"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"tita4264886/base_link" -> "tita4264886/left_leg_1"[label=" Broadcaster: default_authority\nAverage rate: 19.659\nBuffer length: 2.747\nMost recent transform: 1751791452.352843\nOldest transform: 1751791449.606079\n"];
+"tita4264886/left_leg_1" -> "tita4264886/left_leg_2"[label=" Broadcaster: default_authority\nAverage rate: 19.659\nBuffer length: 2.747\nMost recent transform: 1751791452.352843\nOldest transform: 1751791449.606079\n"];
+"tita4264886/left_leg_2" -> "tita4264886/left_leg_3"[label=" Broadcaster: default_authority\nAverage rate: 19.659\nBuffer length: 2.747\nMost recent transform: 1751791452.352843\nOldest transform: 1751791449.606079\n"];
+"tita4264886/left_leg_3" -> "tita4264886/left_leg_4"[label=" Broadcaster: default_authority\nAverage rate: 19.659\nBuffer length: 2.747\nMost recent transform: 1751791452.352843\nOldest transform: 1751791449.606079\n"];
+"tita4264886/base_link" -> "tita4264886/right_leg_1"[label=" Broadcaster: default_authority\nAverage rate: 19.659\nBuffer length: 2.747\nMost recent transform: 1751791452.352843\nOldest transform: 1751791449.606079\n"];
+"tita4264886/right_leg_1" -> "tita4264886/right_leg_2"[label=" Broadcaster: default_authority\nAverage rate: 19.659\nBuffer length: 2.747\nMost recent transform: 1751791452.352843\nOldest transform: 1751791449.606079\n"];
+"tita4264886/right_leg_2" -> "tita4264886/right_leg_3"[label=" Broadcaster: default_authority\nAverage rate: 19.659\nBuffer length: 2.747\nMost recent transform: 1751791452.352843\nOldest transform: 1751791449.606079\n"];
+"tita4264886/right_leg_3" -> "tita4264886/right_leg_4"[label=" Broadcaster: default_authority\nAverage rate: 19.659\nBuffer length: 2.747\nMost recent transform: 1751791452.352843\nOldest transform: 1751791449.606079\n"];
+"tita4264886/base_link" -> "tita4264886/ch201"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"tita4264886/base_link" -> "tita4264886/imu_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"tita4264886/base_link" -> "tita4264886/left_camera"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"tita4264886/base_link" -> "tita4264886/right_camara"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"tita4264886/base_link" -> "tita4264886/spad"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"tita4264886/base_link" -> "tita4264886/spad1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1751791452.3943985"[ shape=plaintext ] ;
+}->"tita4264886/base_link";
+}

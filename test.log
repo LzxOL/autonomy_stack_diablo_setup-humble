@@ -1,0 +1,534 @@
+[static_transform_publisher-7] from '/sensor' to '/camera'
+[localPlanner-4] [INFO] [1753178149.947386810] [localPlanner]: 关键参数: pathFolder=/home/robot/autonomy_stack_diablo_setup-humble/install/local_planner/share/local_planner/paths, useTerrainAnalysis=true, checkObstacle=true, autonomyMode=true
+[localPlanner-4] [INFO] [1753178149.947650721] [localPlanner]: 路径规划参数: minPathRange=1.00, minRelZ=-0.40, maxRelZ=0.30
+[localPlanner-4] [INFO] [1753178150.150276304] [localPlanner]: Reading path files.
+[localPlanner-4] [WARN] [1753178150.151883737] [localPlanner]: Skipping malformed or empty line. Content: '
+[localPlanner-4] '
+[graph_decoder-12] [INFO] [1753178150.194051270] [graph_decoder]: Graph Decoder Node Initialized
+[component_container-1] [INFO] [1753178150.314062055] [camera.camera]: Init xy tables with size 203520
+[far_planner-11] [INFO] [1753178151.361565051] [far_planner]: FAR Planner Node Initiated
+[far_planner-11] [INFO] [1753178151.549892735] [far_planner]: voxel_dim: 0.100000
+[far_planner-11] [INFO] [1753178151.560480428] [far_planner]: FAR Planner ROS Params Initiated
+[far_planner-11] [INFO] [1753178151.560618479] [far_planner]: FAR Planner Callback Initiated
+[far_planner-11] [INFO] [1753178152.260810529] [far_planner]: FAR Planner Processing Objects Initiated
+[localPlanner-4] [INFO] [1753178152.756512659] [localPlanner]: Initialization complete.
+[localPlanner-4] [WARN] [1753178152.759094773] [localPlanner]: New publisher discovered on topic '/tita4264886/perception/obstacle/point', offering incompatible QoS. No messages will be sent to it. Last incompatible policy: RELIABILITY_QOS_POLICY
+[localPlanner-4] [INFO] [1753178152.759997132] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178152.760059021] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178152.760180048] [localPlanner]: 当前路径规划点云大小: 2, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178152.760633052] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178152.760651548] [localPlanner]: 路径评分: maxScore=108591.88, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178152.762664399] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178152.762718033] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178152.772571562] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178152.772679501] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178152.772776048] [localPlanner]: 当前路径规划点云大小: 2, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178152.773221115] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178152.773239003] [localPlanner]: 路径评分: maxScore=108591.88, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178152.776928889] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178152.777017115] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178152.777724877] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178152.777780942] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178152.777861936] [localPlanner]: 当前路径规划点云大小: 2, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178152.779512538] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178152.779598972] [localPlanner]: 路径评分: maxScore=108591.88, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178152.780905630] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178152.780954559] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178152.790331052] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178152.790460048] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178152.790539314] [localPlanner]: 当前路径规划点云大小: 2, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178152.790974653] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178152.790987997] [localPlanner]: 路径评分: maxScore=108591.88, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178152.792279262] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178152.792325983] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178152.797541923] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178152.797645062] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178152.797720264] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178152.798153875] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178152.798168179] [localPlanner]: 路径评分: maxScore=108591.88, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178152.799598679] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178152.799705274] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178152.808854722] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178152.808969349] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178152.809056839] [localPlanner]: 当前路径规划点云大小: 4, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178152.809495314] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178152.809512563] [localPlanner]: 路径评分: maxScore=108591.88, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178152.814564179] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178152.814694998] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178152.817273751] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178152.817394330] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178152.817500989] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178152.817942984] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178152.817958249] [localPlanner]: 路径评分: maxScore=108591.88, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178152.822183156] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178152.822278550] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178152.867570674] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178152.867708021] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178152.867798424] [localPlanner]: 当前路径规划点云大小: 4, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178152.868234403] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178152.868247395] [localPlanner]: 路径评分: maxScore=108585.69, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178152.869558916] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178152.869608134] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178152.961379867] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178152.961493598] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178152.961586401] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178152.962028076] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178152.962041580] [localPlanner]: 路径评分: maxScore=108570.77, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178152.971504444] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178152.971598910] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178153.018649255] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178153.018763946] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178153.018861452] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178153.019303927] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178153.019322328] [localPlanner]: 路径评分: maxScore=108570.77, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178153.020604696] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178153.020649274] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178153.059952574] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178153.060088321] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178153.060179427] [localPlanner]: 当前路径规划点云大小: 4, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178153.060624815] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178153.060764402] [localPlanner]: 路径评分: maxScore=108570.77, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178153.062172982] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178153.062230359] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178153.093149223] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178153.093260202] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178153.093353132] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178153.093789463] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178153.093803447] [localPlanner]: 路径评分: maxScore=108576.91, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178153.095094200] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178153.095136249] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178153.137097825] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178153.137213124] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178153.137325478] [localPlanner]: 当前路径规划点云大小: 4, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178153.137779090] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178153.137800531] [localPlanner]: 路径评分: maxScore=108576.91, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178153.139109012] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178153.139159093] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178153.170951035] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178153.171064798] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178153.171152992] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178153.171599499] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178153.171623916] [localPlanner]: 路径评分: maxScore=108576.91, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178153.172952461] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178153.173003375] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178153.207568667] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178153.207696670] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178153.207781760] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178153.208217163] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178153.208231563] [localPlanner]: 路径评分: maxScore=108576.91, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178153.209486987] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178153.209527116] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178153.241491126] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178153.241620666] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178153.241703516] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178153.242142023] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178153.242157031] [localPlanner]: 路径评分: maxScore=108582.33, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178153.243454760] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178153.243497321] [localPlanner]: 发布路径，长度=19
+[far_planner-11] [2J[0;0H
+[far_planner-11] [1;33m **************** STATIC ENV PLANNING **************** [0m
+[far_planner-11] 
+[far_planner-11] 
+[far_planner-11] 
+[far_planner-11] [INFO] [1753178153.263808620] [far_planner]: FAR Planner Initiated Complete
+[far_planner-11] [INFO] [1753178153.264240087] [far_planner]: Planning skipped: init_completed=1, graph_init=0
+[far_planner-11] [WARN] [1753178153.264688226] [far_planner]: FARMaster: odom frame does NOT match with world frame!
+[far_planner-11] MH: Global Cloud Map Grid Initialized.
+[localPlanner-4] [INFO] [1753178153.265653371] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178153.265773726] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178153.265889153] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178153.266423630] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178153.266462959] [localPlanner]: 路径评分: maxScore=108582.33, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178153.268973359] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178153.269066097] [localPlanner]: 发布路径，长度=19
+[far_planner-11] [WARN] [1753178153.274189427] [far_planner]: FARMaster: wait for v-graph to init before sending any goals
+[localPlanner-4] [INFO] [1753178153.353219494] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178153.353850966] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178153.353953977] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178153.354415332] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178153.354445317] [localPlanner]: 路径评分: maxScore=108582.33, selectedGroupID=127
+[far_planner-11] [INFO] [1753178153.360709156] [far_planner]: Planning skipped: init_completed=1, graph_init=0
+[localPlanner-4] [INFO] [1753178153.363550444] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178153.363664111] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178153.418591999] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178153.418711938] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178153.418802340] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178153.419248975] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178153.424351697] [localPlanner]: 路径评分: maxScore=108594.05, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178153.425756308] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178153.425826166] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178153.472511733] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178153.472633240] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178153.472709210] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178153.473143877] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178153.473156230] [localPlanner]: 路径评分: maxScore=108592.48, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178153.474461127] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178153.474514152] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178153.495705121] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178153.495829988] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178153.495935399] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178153.496378002] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178153.496392306] [localPlanner]: 路径评分: maxScore=108592.48, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178153.513008568] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178153.513121434] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178153.524784482] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178153.524912997] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178153.524994279] [localPlanner]: 当前路径规划点云大小: 4, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178153.525439667] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178153.525458771] [localPlanner]: 路径评分: maxScore=108592.48, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178153.526786005] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178153.526837206] [localPlanner]: 发布路径，长度=19
+[far_planner-11] [INFO] [1753178153.561894063] [far_planner]: Planning skipped: init_completed=1, graph_init=0
+[localPlanner-4] [INFO] [1753178153.566575429] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178153.566680296] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178153.566870125] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178153.567318712] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178153.567334936] [localPlanner]: 路径评分: maxScore=108592.48, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178153.568628793] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178153.568670234] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178153.594984245] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178153.595103256] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178153.595177562] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178153.595621669] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178153.595676551] [localPlanner]: 路径评分: maxScore=108594.54, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178153.596940935] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178153.596969447] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178153.656269030] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178153.656386313] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178153.656477452] [localPlanner]: 当前路径规划点云大小: 4, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178153.656925623] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178153.656948504] [localPlanner]: 路径评分: maxScore=108569.23, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178153.658215672] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178153.658247928] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178153.675173893] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178153.675294312] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178153.675380875] [localPlanner]: 当前路径规划点云大小: 4, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178153.675841238] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178153.675871383] [localPlanner]: 路径评分: maxScore=108569.23, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178153.686969392] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178153.687065907] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178153.715851404] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178153.715965711] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178153.716055794] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178153.716501853] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178153.716516413] [localPlanner]: 路径评分: maxScore=108560.27, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178153.717758141] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178153.717794046] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178153.745910662] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178153.746034505] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178153.746127628] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178153.746580151] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178153.746595415] [localPlanner]: 路径评分: maxScore=108553.06, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178153.747843287] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178153.747885432] [localPlanner]: 发布路径，长度=19
+[far_planner-11] [INFO] [1753178153.793612447] [far_planner]: Planning skipped: init_completed=1, graph_init=0
+[localPlanner-4] [INFO] [1753178153.808798336] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178153.809028390] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178153.809133384] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178153.809576756] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178153.809593588] [localPlanner]: 路径评分: maxScore=108564.66, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178153.810895733] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178153.810943414] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178153.843206216] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178153.843320299] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178153.843419757] [localPlanner]: 当前路径规划点云大小: 4, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178153.843875225] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178153.843896121] [localPlanner]: 路径评分: maxScore=108558.48, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178153.845167930] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178153.845208571] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178153.896529007] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178153.896638738] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178153.896720820] [localPlanner]: 当前路径规划点云大小: 4, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178153.897154623] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178153.897167295] [localPlanner]: 路径评分: maxScore=108522.27, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178153.905690936] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178153.905788218] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178153.917199675] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178153.917305342] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178153.917390752] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178153.917826091] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178153.917838539] [localPlanner]: 路径评分: maxScore=108522.27, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178153.919072683] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178153.919115468] [localPlanner]: 发布路径，长度=19
+[far_planner-11] [INFO] [1753178153.960845453] [far_planner]: Planning skipped: init_completed=1, graph_init=0
+[localPlanner-4] [INFO] [1753178154.087033867] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178154.087153710] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178154.087243537] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[far_planner-11] [WARN] [1753178154.087738973] [far_planner]: FARMaster: wait for v-graph to init before sending any goals
+[localPlanner-4] [INFO] [1753178154.090153338] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178154.090267453] [localPlanner]: 路径评分: maxScore=108504.97, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178154.091578143] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178154.091649568] [localPlanner]: 发布路径，长度=19
+[far_planner-11] [INFO] [1753178154.162193660] [far_planner]: Planning skipped: init_completed=1, graph_init=0
+[localPlanner-4] [INFO] [1753178154.223050146] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178154.223171046] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178154.223258152] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178154.223724180] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178154.223755444] [localPlanner]: 路径评分: maxScore=108511.45, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178154.234170204] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178154.234272223] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178154.292899597] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178154.293012272] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178154.293087857] [localPlanner]: 当前路径规划点云大小: 4, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178154.293537437] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178154.293552669] [localPlanner]: 路径评分: maxScore=108511.45, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178154.294856574] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178154.294907936] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178154.323227949] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178154.323334096] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178154.323423954] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178154.323901310] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178154.323921215] [localPlanner]: 路径评分: maxScore=108511.45, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178154.325197727] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178154.325237376] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178154.358008159] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178154.358119490] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178154.358208164] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178154.358674896] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178154.358698608] [localPlanner]: 路径评分: maxScore=108511.45, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178154.360031922] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178154.360083603] [localPlanner]: 发布路径，长度=19
+[far_planner-11] [INFO] [1753178154.360933801] [far_planner]: Planning skipped: init_completed=1, graph_init=0
+[localPlanner-4] [INFO] [1753178154.426602857] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178154.426736429] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178154.426819247] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178154.427253786] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178154.427266522] [localPlanner]: 路径评分: maxScore=108511.45, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178154.428592636] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178154.428634045] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178154.478183460] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178154.478313224] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178154.478417866] [localPlanner]: 当前路径规划点云大小: 4, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178154.480573473] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178154.480661155] [localPlanner]: 路径评分: maxScore=108511.45, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178154.484294847] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178154.484391810] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178154.516108358] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178154.516230569] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178154.516321355] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178154.524661630] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178154.524785281] [localPlanner]: 路径评分: maxScore=108511.45, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178154.531472363] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178154.531559309] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178154.553360534] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178154.553474873] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178154.553569947] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178154.561085625] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178154.561204860] [localPlanner]: 路径评分: maxScore=108498.99, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178154.562558527] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178154.562622656] [localPlanner]: 发布路径，长度=19
+[far_planner-11] [INFO] [1753178154.570413382] [far_planner]: Planning skipped: init_completed=1, graph_init=0
+[localPlanner-4] [INFO] [1753178154.648150136] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178154.648258427] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178154.648342397] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178154.648777320] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178154.648799560] [localPlanner]: 路径评分: maxScore=108499.82, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178154.650051368] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178154.650098377] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178154.698196140] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178154.698314639] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178154.698395345] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178154.698829948] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178154.698842749] [localPlanner]: 路径评分: maxScore=108496.17, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178154.703407312] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178154.703518259] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178154.736645499] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178154.736774910] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178154.736848576] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178154.737280811] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178154.737293675] [localPlanner]: 路径评分: maxScore=108504.63, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178154.738608140] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178154.738656334] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178154.756074695] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178154.756180362] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178154.756251788] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178154.756685399] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178154.756698679] [localPlanner]: 路径评分: maxScore=108504.63, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178154.760088941] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178154.760178575] [localPlanner]: 发布路径，长度=19
+[far_planner-11] [INFO] [1753178154.761335244] [far_planner]: Planning skipped: init_completed=1, graph_init=0
+[localPlanner-4] [INFO] [1753178154.783004178] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178154.783120501] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178154.783196919] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178154.783676803] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178154.783842791] [localPlanner]: 路径评分: maxScore=108504.63, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178154.785174473] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178154.785243562] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178154.816339742] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178154.816445025] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178154.816536131] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178154.816973583] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178154.816987695] [localPlanner]: 路径评分: maxScore=108504.63, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178154.818241455] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178154.818280144] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178154.861059724] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178154.861167503] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178154.861257073] [localPlanner]: 当前路径规划点云大小: 4, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178154.861692316] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178154.861706940] [localPlanner]: 路径评分: maxScore=108499.62, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178154.862949660] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178154.862988509] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178154.882936726] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178154.883054169] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178154.883126459] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178154.883571046] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178154.883592647] [localPlanner]: 路径评分: maxScore=108490.65, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178154.884878247] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178154.884930921] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178154.914022346] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178154.914142285] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178154.914227311] [localPlanner]: 当前路径规划点云大小: 4, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178154.914669242] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178154.914687515] [localPlanner]: 路径评分: maxScore=108490.65, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178154.915987484] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178154.916050365] [localPlanner]: 发布路径，长度=19
+[far_planner-11] [INFO] [1753178154.961236119] [far_planner]: Planning skipped: init_completed=1, graph_init=0
+[localPlanner-4] [INFO] [1753178155.083335789] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178155.083440816] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178155.083527122] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178155.083983197] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178155.084005534] [localPlanner]: 路径评分: maxScore=108484.28, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178155.085280094] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178155.085324543] [localPlanner]: 发布路径，长度=19
+[far_planner-11] [WARN] [1753178155.088541873] [far_planner]: FARMaster: wait for v-graph to init before sending any goals
+[localPlanner-4] [INFO] [1753178155.134473597] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178155.134599456] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178155.134691715] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178155.135365012] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178155.135418261] [localPlanner]: 路径评分: maxScore=108475.93, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178155.146731540] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178155.146821974] [localPlanner]: 发布路径，长度=19
+[far_planner-11] [INFO] [1753178155.164730396] [far_planner]: Planning skipped: init_completed=1, graph_init=0
+[localPlanner-4] [INFO] [1753178155.194221671] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178155.195625771] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178155.195789103] [localPlanner]: 当前路径规划点云大小: 4, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178155.196505313] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178155.196537890] [localPlanner]: 路径评分: maxScore=108472.97, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178155.202812705] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178155.203003686] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178155.223459564] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178155.226935620] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178155.227144970] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178155.227778362] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178155.227874524] [localPlanner]: 路径评分: maxScore=108484.74, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178155.233596653] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178155.233736241] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178155.274209202] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178155.274379575] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178155.274512954] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178155.275140714] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178155.275172267] [localPlanner]: 路径评分: maxScore=108484.74, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178155.283080531] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178155.283276664] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178155.293300246] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178155.293460282] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178155.293619198] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178155.294271983] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178155.294336849] [localPlanner]: 路径评分: maxScore=108484.74, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178155.300349897] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178155.300481484] [localPlanner]: 发布路径，长度=19
+[far_planner-11] [INFO] [1753178155.362959708] [far_planner]: Planning skipped: init_completed=1, graph_init=0
+[localPlanner-4] [INFO] [1753178155.362941851] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178155.363166497] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178155.363293828] [localPlanner]: 当前路径规划点云大小: 4, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178155.363954421] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178155.364013206] [localPlanner]: 路径评分: maxScore=108490.72, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178155.377227941] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178155.377480108] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178155.420336842] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178155.420531247] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178155.420829334] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178155.421483431] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178155.421522696] [localPlanner]: 路径评分: maxScore=108480.65, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178155.439170887] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178155.439264042] [localPlanner]: 发布路径，长度=19
+[far_planner-11] [INFO] [1753178155.562542302] [far_planner]: Planning skipped: init_completed=1, graph_init=0
+[far_planner-11] [INFO] [1753178155.760891809] [far_planner]: Planning skipped: init_completed=1, graph_init=0
+[far_planner-11] [INFO] [1753178155.966195476] [far_planner]: Planning skipped: init_completed=1, graph_init=0
+[far_planner-11] [WARN] [1753178156.087983650] [far_planner]: FARMaster: wait for v-graph to init before sending any goals
+[far_planner-11] [INFO] [1753178156.161031710] [far_planner]: Planning skipped: init_completed=1, graph_init=0
+[far_planner-11] [INFO] [1753178156.360924328] [far_planner]: Planning skipped: init_completed=1, graph_init=0
+[localPlanner-4] [INFO] [1753178156.550115106] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178156.550253670] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178156.550352968] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178156.550793460] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178156.550809684] [localPlanner]: 路径评分: maxScore=108457.84, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178156.552107221] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178156.552159830] [localPlanner]: 发布路径，长度=19
+[far_planner-11] [INFO] [1753178156.561005142] [far_planner]: Planning skipped: init_completed=1, graph_init=0
+[localPlanner-4] [INFO] [1753178156.579796275] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178156.579904597] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178156.579981239] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178156.580416450] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178156.580430787] [localPlanner]: 路径评分: maxScore=108457.84, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178156.581677026] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178156.581718435] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178156.619936076] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178156.620048207] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178156.620134097] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178156.620584252] [localPlanner]: 可行路径统计: 总数=3098
+[localPlanner-4] [INFO] [1753178156.620599421] [localPlanner]: 路径评分: maxScore=108455.62, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178156.622773204] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178156.622834261] [localPlanner]: 发布路径，长度=19
+[localPlanner-4] [INFO] [1753178156.669772123] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178156.669882590] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178156.669965024] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178156.670400683] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178156.670414571] [localPlanner]: 路径评分: maxScore=108465.38, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178156.672474015] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178156.672543137] [localPlanner]: 发布路径，长度=19
+[far_planner-11] [INFO] [1753178156.761083173] [far_planner]: Planning skipped: init_completed=1, graph_init=0
+[localPlanner-4] [INFO] [1753178156.939883000] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178156.939992859] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178156.940071037] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178156.940517320] [localPlanner]: 可行路径统计: 总数=3097
+[localPlanner-4] [INFO] [1753178156.940537833] [localPlanner]: 路径评分: maxScore=108461.73, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178156.944591824] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178156.944681650] [localPlanner]: 发布路径，长度=19
+[far_planner-11] [INFO] [1753178156.960950382] [far_planner]: Planning skipped: init_completed=1, graph_init=0
+[far_planner-11] [WARN] [1753178157.087552023] [far_planner]: FARMaster: wait for v-graph to init before sending any goals
+[far_planner-11] [INFO] [1753178157.161136736] [far_planner]: Planning skipped: init_completed=1, graph_init=0
+[localPlanner-4] [INFO] [1753178157.241026632] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178157.241272239] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178157.241368689] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178157.242808406] [localPlanner]: 可行路径统计: 总数=3098
+[localPlanner-4] [INFO] [1753178157.242830838] [localPlanner]: 路径评分: maxScore=108454.77, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178157.244133847] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178157.244182584] [localPlanner]: 发布路径，长度=19
+[far_planner-11] [INFO] [1753178157.360961576] [far_planner]: Planning skipped: init_completed=1, graph_init=0
+[localPlanner-4] [INFO] [1753178157.459809393] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178157.459918804] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178157.460002550] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178157.460437985] [localPlanner]: 可行路径统计: 总数=3098
+[localPlanner-4] [INFO] [1753178157.460451137] [localPlanner]: 路径评分: maxScore=108445.49, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178157.461709953] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178157.461747746] [localPlanner]: 发布路径，长度=19
+[far_planner-11] [INFO] [1753178157.560949748] [far_planner]: Planning skipped: init_completed=1, graph_init=0
+[localPlanner-4] [INFO] [1753178157.620304501] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178157.620561435] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178157.620783137] [localPlanner]: 当前路径规划点云大小: 8, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178157.621412625] [localPlanner]: 可行路径统计: 总数=3098
+[localPlanner-4] [INFO] [1753178157.621479602] [localPlanner]: 路径评分: maxScore=108442.24, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178157.623356578] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178157.623450564] [localPlanner]: 发布路径，长度=19
+[far_planner-11] [INFO] [1753178157.761713876] [far_planner]: Planning skipped: init_completed=1, graph_init=0
+[far_planner-11] [INFO] [1753178157.961015151] [far_planner]: Planning skipped: init_completed=1, graph_init=0
+[far_planner-11] [WARN] [1753178158.088549520] [far_planner]: FARMaster: wait for v-graph to init before sending any goals
+[localPlanner-4] [INFO] [1753178158.100856999] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178158.101007051] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178158.101253874] [localPlanner]: 当前路径规划点云大小: 4, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178158.101894274] [localPlanner]: 可行路径统计: 总数=3098
+[localPlanner-4] [INFO] [1753178158.101961411] [localPlanner]: 路径评分: maxScore=108440.96, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178158.103896340] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178158.103938838] [localPlanner]: 发布路径，长度=19
+[far_planner-11] [INFO] [1753178158.163945670] [far_planner]: Planning skipped: init_completed=1, graph_init=0
+[localPlanner-4] [INFO] [1753178158.350023602] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178158.350172630] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRange=1.00
+[localPlanner-4] [INFO] [1753178158.350291193] [localPlanner]: 当前路径规划点云大小: 4, 范围参数: pathRange=1.00, relativeGoalDis=0.14
+[localPlanner-4] [INFO] [1753178158.351013707] [localPlanner]: 可行路径统计: 总数=3098
+[localPlanner-4] [INFO] [1753178158.351085837] [localPlanner]: 路径评分: maxScore=108439.84, selectedGroupID=127
+[localPlanner-4] [INFO] [1753178158.354320383] [localPlanner]: 找到有效路径，选择组ID=1
+[localPlanner-4] [INFO] [1753178158.354448770] [localPlanner]: 发布路径，长度=19
+[far_planner-11] [INFO] [1753178158.362441325] [far_planner]: Planning skipped: init_completed=1, graph_init=0
+[localPlanner-4] [INFO] [1753178158.560483624] [localPlanner]: 开始规划路径: autonomyMode=true, checkObstacle=true
+[localPlanner-4] [INFO] [1753178158.560593163] [localPlanner]: 尝试路径规划: pathScale=0.75, pathRange=1.00, minPathScale=0.75, minPathRan
